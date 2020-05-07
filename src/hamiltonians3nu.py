@@ -150,7 +150,7 @@ def hamiltonian_3nu_vacuum_energy_independent(s12, s23, s13, dCP, D21, D31,
         # PMNS matrix
         R = np.array(pmns_mixing_matrix(s12, s23, s13, dCP))
         # Mass matrix
-        M2 = np.array([[0.0+0.0025*D31, 0.0, 0.0], [0.0, D21, 0.0], [0.0, 0.0, D31]])
+        M2 = np.array([[0.0, 0.0, 0.0], [0.0, D21, 0.0], [0.0, 0.0, D31]])
 	#scalar NSI matrix
 	#N = np.array([[0.0,0.0,0.0], [0.0,np.sqrt(D31)*0.1,0.0], [0.0,0.0,0.0]])
 	#H2 = list(f*np.matmul(R, np.matmul(N,np.conj(matrix.transpose(R)))))
